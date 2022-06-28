@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+    <title>It's a piece of a cake</title>
+    <style>
+        .profile{
+            position: fixed;
+            left:15%;
+            top: 20%;
+            right: 15%;
+            /* width: 1200px; */
+            text-align: left;
+
+        }
+
+        .profile .name{
+
+            font-size: 8vw;
+            margin-bottom: 5%;
+            left: 0;
+        }
+
+        .profile .profilelist{
+            /* position: absolute; */
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0.5em;
+            left:0;
+            /* margin-top: 10%; */
+            font-size: 4vw;
+            line-height: 110%;
+        }
+
+        #aida {
+            cursor: pointer;
+        }
+
+        /* .profile .profilelist:nth-child(1)
+        {
+            top: 0%;
+        }
+        .profile .profilelist:nth-child(2)
+        {
+            top: 270%;
+        } */
+
+    </style>
+</head>
+<body>
+<!-- 상단 좌측 로고 -->
+<header class="logo" id="logo" onClick="location.href='index.html'">
+</header>
+<!-- 우측 메뉴 -->
+<ul class="menu">
+    <li><a href="Works.html" target="_self">Works</a></li>
+    <li><a href="Publication.html" target="_self">Publications</a></li>
+    <li><a href="Biography.html" target="_self">Biography</a></li>
+    <li><a href="Contact.html" target="_self">Contact</a></li>
+</ul> 
+<!-- 프로필 -->
+<div class="profile" style="overflow-y:scroll;">
+    <div class="name">HUN</div>
+    <p class="profilelist">Majoring in Design Management<br/>at Hongik Univ. IDAS(2022)</p>
+    <p class="profilelist">D.cirlce(2020)</p>
+    <p class="profilelist">BFA in Visual Communication Design<br/>at Dankook Univ.(2019)</p>
+    <p class="profilelist">Student Representative<br/>of Graduate Exhibition<br/>at Dankook Univ.(2019)</p>
+    <p class="profilelist" id="aida" onClick="window.open('https://m.blog.naver.com/seenseecom/220942694814')">Disney Muscial AIDA Supporters<br/>at Seensee Company(2016-7)</p>
+    <hr style="border: solid 0.5px black">
+    <p class="profilelist">Engineer Colorist License<br/>from HRDK(2022)</p>
+    <p class="profilelist">Perfume Instructor Certificate<br/>from KPEA(2021)</p>
+    <p class="profilelist">Perfume Designer Certificate<br/>from KPEA(2021)</p>
+</div>
+
+</body>
+</html> 
