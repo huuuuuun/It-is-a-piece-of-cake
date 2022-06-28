@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.js" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v5/icons/behance?s=brands">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+    <title>It's a piece of a cake</title>
+
+    <style>
+        .contact{
+            margin: 0;
+            position: fixed;
+            left:15%;
+            top: 35%;
+            width: 1200px;
+        }
+
+        .contact .contacttitle{
+margin-bottom: 0.15em;
+        }
+
+        .contact .contactinfo{
+            font-size: 4.5vw;
+            text-align: left;
+            text-indent: 1em;
+        }
+
+        .sns {
+            position: fixed;
+            bottom: 1.5%;
+            right: 24px;
+            font-size: 3vw;
+        }
+        .resume {
+            font-size: 4.5vw;
+            text-align: left;
+            text-indent: 1em;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 상단 좌측 로고 -->
+<header class="logo" id="logo" onClick="location.href='index.html'">
+</header>
+<!-- 우측 메뉴 -->
+<ul class="menu">
+    <li><a href="Works.html" target="_self">Works</a></li>
+    <li><a href="Publication.html" target="_self">Publications</a></li>
+    <li><a href="Biography.html" target="_self">Biography</a></li>
+    <li><a href="Contact.html" target="_self">Contact</a></li>
+</ul>
+<!-- 연락처 -->
+<div class="contact">
+    <div class="contacttitle">Contact Here</div>
+    <div class="contactinfo">hun__t@naver.com</div>
+    <div class="contactinfo">+82.10.6523.0330</div>
+    <div class="resume" onclick="window.open('https://drive.google.com/drive/folders/1q_NTc4swUhLbHeC9qOksO8kb4H6F4-hR?usp=sharing')">Resume</div>
+</div>
+<!-- 하단 sns 아이콘 -->
+<div class="sns">
+    <i class="fab fa-instagram" onClick="window.open('https://www.instagram.com/simusimu._/')"></i>
+    <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/%EB%AA%85%ED%9B%88-%EC%8B%AC-81a08b233')"></i>
+    <!-- <i class="fab fa-behance" onclick="window.open('')"></i> -->
+</div>
+</body>
+</html> 
