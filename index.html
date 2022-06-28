@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a piece of a cake</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+
+
+var imgIdx = 0;
+
+var imgObjArrayList = [];
+
+var imgObject1 = $('<img src="https://i.ibb.co/Vx1Hgxh/1.png" alt=""/>');
+var imgObject2 = $('<img src="https://i.ibb.co/M75bWND/2.png" alt=""/>');
+var imgObject3 = $('<img src="https://i.ibb.co/b6RkM46/3.png" alt=""/>');
+var imgObject4 = $('<img src="https://i.ibb.co/XZwWMNZ/4.png" alt=""/>');
+var imgObject5 = $('<img src="https://i.ibb.co/YpPJMYH/5.png" alt=""/>');
+var imgObject6 = $('<img src="https://i.ibb.co/XZwWMNZ/4.png" alt=""/>');
+var imgObject7 = $('<img src="https://i.ibb.co/dgTYmPS/7.png" alt=""/>');
+var imgObject8 = $('<img src="https://i.ibb.co/31k9gcj/8.png" alt=""/>');
+var imgObject9 = $('<img src="https://i.ibb.co/FbJyqCs/9.png" alt=""/>');
+var imgObject10 = $('<img src="https://i.ibb.co/0cSBQFr/10.png" alt=""/>');
+
+
+
+
+imgObjArrayList.push(imgObject1);
+imgObjArrayList.push(imgObject2);
+imgObjArrayList.push(imgObject3);
+imgObjArrayList.push(imgObject4);
+imgObjArrayList.push(imgObject5);
+imgObjArrayList.push(imgObject6);
+imgObjArrayList.push(imgObject7);
+imgObjArrayList.push(imgObject8);
+imgObjArrayList.push(imgObject9);
+imgObjArrayList.push(imgObject10);
+
+
+        $(function(){
+    var fadeDelay = 1000;
+    var fadeDuration = 1000;
+    $(document).click(function(e){
+        var div = $('<div class="image-wrapper">')
+            .css({
+                "left": e.pageX + 'px',
+                "top": e.pageY + 'px'
+            })
+            .append(imgObjArrayList[generator()])
+            // .append($('<img src="http://www.chemicalnews.co.kr/news/photo/202106/3636_10174_4958.jpg" alt="" />'))
+            // .append($('<img src="http://newsimg.hankookilbo.com/2016/04/13/201604131460701467_1.jpg" alt="" />'))
+            // .append($('<img src="https://img.freepik.com/free-photo/the-red-or-white-cat-i-on-white-studio_155003-13189.jpg?w=2000" alt="" />'))
+            // .append($('<img src="https://t1.daumcdn.net/cfile/tistory/99469A475D15070E05" alt="" />'))
+            // .append($('<img src="" alt="myimage" />'))
+            .appendTo(document.body);
+
+
+
+        // setTimeout(function() {
+        //     div.addClass('fade-out');           
+        //     setTimeout(function() { div.remove(); }, fadeDuration);
+        // }, fadeDelay);
+    });
+});
+
+
+function generator(){
+var randomNum = Math.floor(Math.random() * 10 + 1);
+return randomNum;
+}
+
+    </script>
+    <style>
+        body {
+    position: relative;
+}
+
+.image-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+}
+
+/* .image-wrapper.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+} */
+    </style>
+</head>
+<body>
+<!-- 상단 좌측 로고 -->
+<header class="logo" id="logo" onClick="location.href='index.html'">
+</header>
+<!-- 우측 메뉴 -->
+<ul class="menu">
+    <li><a href="/pages/Works.html" target="_self">Works</a></li>
+    <li><a href="/pages/Publication.html" target="_self">Publications</a></li>
+    <li><a href="/pages/Biography.html" target="_self">Biography</a></li>
+    <li><a href="/pages/Contact.html" target="_self">Contact</a></li>
+</ul>    
+<!-- 메인 키비주얼 -->
+<div class="main"></div>
+<div class="body">
+    <div class="image-wrapper" id="sticker">
+        <!-- <div class="image"><img src="/images/sticker/16.png"></div>
+        <div class="image"><img src="/images/sticker/15.png"></div> -->
+    </div>
+</div>
+<!-- 하단 카피라이트 -->
+<h6 class="copyright">Copyright 2022.<br/>HUN All pictures cannot be copied without permission.</h6>
+
+</body>
+</html> 
