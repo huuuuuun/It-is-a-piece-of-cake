@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+    <title>It's a piece of a cake</title>
+    <style>
+                .profile{
+            position: fixed;
+            left:15%;
+            top: 20%;
+            right: 15%;
+            /* width: 1200px; */
+            text-align: left;
+
+        }
+
+        .profile .name{
+
+            font-size: 8vw;
+            margin-bottom: 5%;
+            left: 0;
+        }
+
+        .profile .논문타이틀{
+            /* position: absolute; */
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0.1em;
+            margin-right: 24px;
+            left:0;
+            /* margin-top: 10%; */
+            font-size: 4vw;
+            line-height: 110%;
+            cursor: pointer;
+        }
+
+        .profile .학회{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 2.5em;
+            font-size: 2.5vw;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<!-- 상단 좌측 로고 -->
+<header class="logo" id="logo" onClick="location.href='index.html'">
+</header>
+<!-- 우측 메뉴 -->
+<ul class="menu">
+    <li><a href="Works.html" target="_self">Works</a></li>
+    <li><a href="Publication.html" target="_self">Publications</a></li>
+    <li><a href="Biography.html" target="_self">Biography</a></li>
+    <li><a href="Contact.html" target="_self">Contact</a></li>
+</ul>     
+<!-- 논문 리스트 -->
+<div class="profile" style="overflow-y:scroll;">
+    <div class="name">Thesis</div>
+    <!-- <p class="profilelist">A Study on the Influence<br>Artificial Intelligence Images Percived by Consumers on Brand Equity<br>-Focusing on Unmanned Stores-</p>
+    <p class="학회">Master Degree Thesis(2022)</p> -->
+    <p class="논문타이틀" onclick="window.open('https://www.d-research.or.kr/design/zine_view.php?wr_id=1703')">
+        Analysis of LOUIS VUITTON Intellectual Property Rights Case from the Perspective of Brand Equity</p>
+    <p class="학회">KIDRS(2021)</p>
+    <p class="논문타이틀" onClick="window.open('https://ieeexplore.ieee.org/abstract/document/9649781?casa_token=Wsuk0_vbKq8AAAAA:I14SW88Dn4A7hlBqKpkzHfNNMzOHAKBsk_VI9I1tK7OOJuHaPxxutPurJkG15LOUZZMEbDm8X7Hp')" target="_blank">
+        Suggestion on the Practical<br>Human Robot Interaction Design for the Autonomous Driving<br>Disinfection Robot</p>
+    <p class="학회">ICCAS(2021)</p>
+    <!-- <hr style="border: solid 0.5px black"> -->
+</div>
+</body>
+</html> 
